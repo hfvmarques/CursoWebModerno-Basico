@@ -12,7 +12,7 @@ const avaliacao2 = 6.871
 const total = avaliacao1 * peso1 + avaliacao2 * peso2
 const media = total / (peso1 + peso2)
 
-console.log(media.toFixed(2)) // Trunca em duas casas
+console.log(media.toFixed(2)) // Arredonda em duas casas
 console.log(media.toString(2)) // Transforma o número em binário
 console.log(typeof media)
 console.log(typeof Number)
