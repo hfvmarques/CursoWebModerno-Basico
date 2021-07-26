@@ -1,8 +1,8 @@
 // cadeira de protótipos (prototype chain)
 Object.prototype.attr0 = 'Z' // não é recomendado fazer isso
 const avo = { attr1: 'A' }
-const pai = { __proto___: avo, attr2: 'B' } // desta forma não funcionou
-const filho = { __proto___: pai, attr3: 'C' } // desta forma não funcionou
+const pai = { __proto__: avo, attr2: 'B' } // desta forma não funcionou
+const filho = { __proto__: pai, attr3: 'C' } // desta forma não funcionou
 // Object.setPrototypeOf(pai, avo) // desta forma funcionou
 // Object.setPrototypeOf(filho, pai) // desta forma funcionou
 console.log(filho.attr0, filho.attr1, filho.attr2, filho.attr3)
